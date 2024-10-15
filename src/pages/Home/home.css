@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 32px 0 32px;
+    gap: 8px;
+}
+
+.restaurants-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

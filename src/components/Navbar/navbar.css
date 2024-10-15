@@ -1,0 +1,15 @@
+.navbar-container {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguer-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 8px;
+    background: var(--color-primary);
+}

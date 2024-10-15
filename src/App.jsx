@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import { Routes } from './routes'
+
+import './reset.css'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      Frontend Developer Capstone
-    </>
+    <Routes />
   )
 }
 

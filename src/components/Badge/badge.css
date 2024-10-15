@@ -1,0 +1,21 @@
+.badge {
+    border: 1px solid #e0e0e0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: small;
+}
+
+.primary-badge {
+    background-color: #1976d2A0;
+    color: white;
+}
+
+.secondary-badge {
+    background-color: #dc004eA0;
+    color: white;
+}
+
+.tertiary-badge {
+    background-color: #20b11ba0;
+    color: white;
+}
