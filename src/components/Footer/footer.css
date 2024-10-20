@@ -1,6 +1,6 @@
 .footer-container {
     background-color: var(--color-primary);
-    border-top: 2px solid var(--color-secondary);;
+    border-top: 2px solid var(--color-secondary);
     color: white;
     padding: 10px;
     display: grid;
@@ -10,3 +10,6 @@
     text-align: center;
 }
 
+.footer-container h3 {
+    color: var(--color-secondary);
+}

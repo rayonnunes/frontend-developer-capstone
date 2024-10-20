@@ -1,12 +1,15 @@
 :root {
   --color-primary: #495e57;
   --color-secondary: #f4ce14;
+  --color-secondary-50-opacity: #f4ce145F;
   --border-radius-md: 0.5rem;
   --border-radius-lg: 1rem;
+  --container-padding: 8px 32px 0 32px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  color: var(--color-primary)
 }
   
 span, p, label, input, input::placeholder, textarea, textarea::placeholder, button, li {

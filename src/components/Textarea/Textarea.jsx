@@ -1,43 +1,40 @@
 import { PropTypes } from "prop-types";
 
-import "./input.css";
+import "./textarea.css";
 import { Label } from "../Label";
 
-export function Input({
+export function Textarea({
   id,
   type = "text",
   label,
   placeholder,
   value,
   onChange,
-  Prefix,
-  ...inputRest
+  ...textareaRest
 }) {
   return (
     <div>
       {label && <Label htmlFor={id}>{label}</Label>}
-      <div className="input-container">
-        {Prefix}
-        <input
+      <div className="textarea-container">
+        <textarea
           id={id}
-          className="input"
+          className="textarea"
           type={type}
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          {...inputRest}
+          {...textareaRest}
         />
       </div>
     </div>
   );
 }
 
-Input.propTypes = {
+Textarea.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
   value: PropTypes.string,
-  Prefix: PropTypes.node,
   onChange: PropTypes.func,
 };

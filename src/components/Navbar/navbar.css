@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .hamburguer-menu span {
     display: block;
     width: 25px;

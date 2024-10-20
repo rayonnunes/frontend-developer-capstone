@@ -1,0 +1,12 @@
+.book-table-container {
+    padding: var(--container-padding);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.book-table-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

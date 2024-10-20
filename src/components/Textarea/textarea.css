@@ -1,4 +1,4 @@
-.input-container {
+.textarea-container {
     width: 100%;
     display: flex;
     gap: 0.5rem;
@@ -9,13 +9,13 @@
     transition: border-color 0.2s;
 }
 
-.input-container input {
+.textarea-container textarea {
     flex: 1;
     border: none;
     outline: none;
     font-size: 1rem;
 }
 
-.input-container:focus-within {
+.textarea-container:focus-within {
     outline: 2px solid var(--color-primary);
 }

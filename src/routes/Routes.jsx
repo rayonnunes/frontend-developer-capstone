@@ -3,7 +3,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-import { Layout, Home, Restaurant } from "../pages";
+import { Layout, Home, Restaurant, BookTable } from "../pages";
 import { getParams } from "./loaders";
 
 const router = createBrowserRouter([
@@ -14,11 +14,15 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-
             },
             {
                 path: "/restaurants/:id",
                 element: <Restaurant />,
+                loader: getParams
+            },
+            {
+                path: "/restaurants/:id/book-table",
+                element: <BookTable />,
                 loader: getParams
             }
         ]
