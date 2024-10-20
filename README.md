@@ -1,8 +1,10 @@
-# React + Vite
+# Little lemon restaurant
+This is a simple React project that uses Vite as a build tool. It is a simple restaurant website that allows users to view the menu and make reservations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Get Started
+To run this React project with Vite, you can use either of the following commands:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```

@@ -2,9 +2,9 @@ import { PropTypes } from 'prop-types';
 
 import './button.css';
 
-export function Button({ children, variant = 'primary' }) {
+export function Button({ children, variant = 'primary', ...rest }) {
     return (
-        <button className={`button ${variant}-button`}>{children}</button>
+        <button className={`button ${variant}-button`} {...rest}>{children}</button>
     )
 }
 

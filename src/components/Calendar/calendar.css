@@ -1,0 +1,32 @@
+.rdp-root {
+    --rdp-accent-color: var(--color-primary);
+    --rdp-accent-background-color: #ff0000;
+    --rdp-font-family: 'Roboto', sans-serif;
+    --rdp-selected-border: none;
+  }
+
+.calendar-container {
+  display: flex;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: var(--rdp-font-family);
+}
+
+.calendar-selected {
+  background: var(--color-secondary);
+  border-radius: 100px;
+  color: #fff;
+  border-width: 0;
+}
+.calendar-day {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .rdp-root {
+    --rdp-day-height: 2rem;
+    --rdp-day-width: 2rem;
+  }
+}

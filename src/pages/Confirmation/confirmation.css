@@ -1,0 +1,35 @@
+.confirmation-container {
+  padding: var(--container-padding);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.confirmation-container > p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.confirmation-details {
+  margin-top: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.confirmation-details strong {
+  color: var(--color-primary);
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .confirmation-container {
+    padding: 1rem;
+  }
+}

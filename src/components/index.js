@@ -1,5 +1,6 @@
 export * from './Badge'
 export * from './Button'
+export * from './Radio'
 export * from './FeaturedRestaurant'
 export * from './Footer'
 export * from './Input'

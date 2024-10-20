@@ -1,6 +1,12 @@
 .input-container {
-    width: 100%;
     display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.input-field {
+    display: flex;
+    flex: 1;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -9,13 +15,13 @@
     transition: border-color 0.2s;
 }
 
-.input-container input {
+.input-field input {
     flex: 1;
     border: none;
     outline: none;
     font-size: 1rem;
 }
 
-.input-container:focus-within {
+.input-field:focus-within {
     outline: 2px solid var(--color-primary);
 }

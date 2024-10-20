@@ -2,6 +2,8 @@
   --color-primary: #495e57;
   --color-secondary: #f4ce14;
   --color-secondary-50-opacity: #f4ce145F;
+  --color-disabled: #676767;
+  --color-text-disabled: #f5f5f5;
   --border-radius-md: 0.5rem;
   --border-radius-lg: 1rem;
   --container-padding: 8px 32px 0 32px;
