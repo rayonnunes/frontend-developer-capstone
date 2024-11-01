@@ -23,11 +23,11 @@ export function Restaurant() {
         />
       </div>
       <h1>{restaurant.name}</h1>
-      <ul>
+      <ul role="tablist">
         <li aria-selected="true">Menu</li>
-        <li>Details</li>
-        <li>Location</li>
-        <li>Reviews</li>
+        <li role="tab">Details</li>
+        <li role="tab">Location</li>
+        <li role="tab">Reviews</li>
       </ul>
       {restaurant.menu.map((item) => (
         <MenuItem key={item.id} item={item} />

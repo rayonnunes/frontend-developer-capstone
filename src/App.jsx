@@ -1,12 +1,16 @@
-import { Routes } from './routes'
+import { Theme } from "@radix-ui/themes";
+import { Routes } from "./routes";
 
-import './reset.css'
-import './index.css'
+import "./reset.css";
+import "./index.css";
+import "@radix-ui/themes/styles.css";
 
 function App() {
   return (
-    <Routes />
-  )
+    <Theme>
+      <Routes />
+    </Theme>
+  );
 }
 
-export default App
+export default App;

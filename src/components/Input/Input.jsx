@@ -1,18 +1,20 @@
+import { forwardRef } from "react";
 import { PropTypes } from "prop-types";
 
 import "./input.css";
 import { Label } from "../Label";
 
-export function Input({
-  id,
-  type = "text",
-  label,
-  placeholder,
-  value,
-  onChange,
-  Prefix,
-  ...inputRest
-}) {
+export const Input = forwardRef((props, ref) => {
+  const {
+    id,
+    type = "text",
+    label,
+    placeholder,
+    value,
+    onChange,
+    Prefix,
+    ...inputRest
+  } = props;
   return (
     <div className="input-container">
       {label && <Label htmlFor={id}>{label}</Label>}
@@ -25,12 +27,13 @@ export function Input({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          ref={ref}
           {...inputRest}
         />
       </div>
     </div>
   );
-}
+});
 
 Input.propTypes = {
   id: PropTypes.string,

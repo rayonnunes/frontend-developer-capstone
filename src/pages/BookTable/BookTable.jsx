@@ -10,15 +10,15 @@ import "./book-table.css";
 
 export function BookTable() {
   const { id } = useLoaderData();
-  const [date, setDate] = useState();
-  const [time, setTime] = useState();
-  const [period, setPeriod] = useState();
-  const [firstName, setFirstName] = useState();
-  const [lastName, setLastName] = useState();
-  const [numberGuests, setNumberGuests] = useState();
-  const [phoneNumber, setPhoneNumber] = useState();
-  const [email, setEmail] = useState();
-  const [additionalRequests, setAdditionalRequests] = useState();
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [period, setPeriod] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [numberGuests, setNumberGuests] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [additionalRequests, setAdditionalRequests] = useState("");
 
   const navigate = useNavigate();
 
@@ -75,6 +75,7 @@ export function BookTable() {
                 value={time}
                 required
                 onChange={(event) => setTime(event.target.value)}
+                data-testid="input-time"
               />
               <div className="radio-button-group">
                 <RadioButton
