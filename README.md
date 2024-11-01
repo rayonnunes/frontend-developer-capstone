@@ -10,3 +10,6 @@ To run this React project with Vite, you need to have Node.js installed on your 
 npm install
 npm run dev
 ```
+
+# Demo
+![little lemon demo](src/assets/demo.gif)
